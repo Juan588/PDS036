@@ -1,7 +1,6 @@
 
 package Clases;
 
-
 public class Usuario {
     
    String nombre;
@@ -58,4 +57,52 @@ public class Usuario {
        return ("Nombre: " +this.nombre+ "Correo Electronico: " +this.correoElec+ "Contraseña: " +this.contraseña+ "Tiempo de uso: " +this.tiempoUso+ "Gasto de kilovatios: " +this.gastoKw);
    }
 }
+
+
+import java.util.ArrayList;
+
+public class Servidor {
+    
+static ArrayList<Usuario> u = new ArrayList <Usuario>();
+
+public static void HistorialUsuario(){
+    for(Usuario us:u){
+        System.out.println(us.toString());
+    }
+  }
+}
+
+
+package Clases;
+
+public class Graficas {
+  int tiempo;
+  int gasto;
+  
+  public Graficas(int tiempo, int gasto){
+      this.tiempo=tiempo;
+      this.gasto=gasto;
+  }
+          public int getTiempo(){
+       return tiempo;
+   }
+  
+   public void setTiempo (int tiempo){
+       this.tiempo=tiempo;
+   }
+   
+        public int getGasto(){
+       return gasto;
+   }
+   
+   public void setGasto (int gasto){
+       this.gasto=gasto;
+   }
+   
+   public String toString(){
+       return ("Tiempo: " +this.tiempo+ "Gasto : " +this.gasto);
+   }
+}
+
+
 
