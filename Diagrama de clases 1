@@ -5,3 +5,10 @@ public class RegistroFechas
         return Grafica.GenerargraficaSemana(dias,gasto,tiempo);
     }
 }
+
+
+public class DatoFecha
+{
+    private int gasto;
+    private int tiempo;
+}
