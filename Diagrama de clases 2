@@ -105,4 +105,23 @@ public class Graficas {
 }
 
 
+public class PaginaWeb
+{
+    public Usuario registrarUsuario(String nombre,String correoElec,String contraseña){
+        return (new Usuario(nombre,correoElec,contraseña));
+    }
+    
+    public void ingresarUsuario(String correoElec, String contraseña){
+        Usuario user = new Usuario();
+        user.ingresarSistema(correoElec,contraseña);
+    }
+    
+    public void mostrarDatos(boolean confirmacion){
+        if(confirmacion){
+            Grafica graf = new Grafica(); 
+            return graf.generarGrafica();
+        }
+    }
+}
+
 
