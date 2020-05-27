@@ -1,0 +1,61 @@
+
+package Clases;
+
+
+public class Usuario {
+    
+   String nombre;
+   String correoElec;
+   String contraseña;
+   int tiempoUso;
+   int gastoKw;
+   
+   public Usuario(String nombre, String correoElec, String contraseña, int tiempoUso, int gastoKw){
+       this.nombre=nombre;
+       this.correoElec=correoElec;
+       this.contraseña=contraseña;
+       this.tiempoUso=tiempoUso;
+       this.gastoKw=gastoKw;
+   }
+   
+   public String getNombre(){
+       return nombre;
+   }
+   
+   public void setNombre(String nombre){
+       this.nombre=nombre;
+   }
+      public String getCorreoElec(){
+       return correoElec;
+   }
+   
+   public void setCorreoElec(String correoElec){
+       this.correoElec=correoElec;
+   }
+      public String getContraseña(){
+       return nombre;
+   }
+   
+   public void setContraseña(String contraseña){
+       this.contraseña=contraseña;
+   }
+      public int getTiempoUso(){
+       return tiempoUso;
+   }
+   
+   public void setTiempoUso(int tiempoUso){
+       this.tiempoUso=tiempoUso;
+   }
+      public int getGastokw(){
+       return gastoKw;
+   }
+   
+   public void setGastoKw (int gastoKw){
+       this.gastoKw=gastoKw;
+   }
+   
+   public String toString(){
+       return ("Nombre: " +this.nombre+ "Correo Electronico: " +this.correoElec+ "Contraseña: " +this.contraseña+ "Tiempo de uso: " +this.tiempoUso+ "Gasto de kilovatios: " +this.gastoKw);
+   }
+}
+
