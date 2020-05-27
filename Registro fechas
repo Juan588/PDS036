@@ -1,0 +1,7 @@
+public class RegistroFechas
+{
+    public String[] dia = {"Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"};
+    public Grafica generarDatosSemana(String [] dias,int gasto, int tiempo){
+        return Grafica.GenerargraficaSemana(dias,gasto,tiempo);
+    }
+}
